@@ -1,0 +1,27 @@
+body{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', serif;
+    color: $color-white;
+    line-height: 1.7;
+}
+
+.heading-primary{
+    text-transform: uppercase;
+    color: $color-white;
+
+    &--main{
+        display: block;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 35px;
+        animation: fadeInLeft 1s ease-out ;
+    }
+    &--sub{
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 15px;
+        animation: fadeInRight 1s linear;
+    }
+}
