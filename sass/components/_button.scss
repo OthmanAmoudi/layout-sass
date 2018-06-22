@@ -10,7 +10,7 @@
         position: relative;
         display: inline-block;
         text-decoration: none;
-        font-size: 15px;
+        font-size: $default-font-size;
         font-weight: 600;
         padding: 15px 40px;
         border-radius: 100px;
@@ -45,5 +45,30 @@
     &:hover::after{
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0;
+    }
+}
+
+.btn-text{
+    &:link,
+    &:visited{
+     font-size: $default-font-size;
+     color: $color-medium-green;
+     text-decoration: none;
+     display: inline-block;
+     border-bottom: 1px solid $color-medium-green;
+     padding: 3px;
+     transition: all .3s;
+    }
+
+    &:hover{
+        background-color: $color-primary;
+        color: $color-white;
+        text-shadow: 0 1rem 3rem rgba($color-black, 0.25);
+        transform: translateY(-3px);
+    }
+
+    &:active{
+        text-shadow: 0 .5rem 1rem rgba($color-black, 0.15);
+        transform: translateY(0);
     }
 }

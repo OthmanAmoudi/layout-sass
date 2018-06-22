@@ -1,8 +1,9 @@
 .row{
-    color:black;
+    color:$color-black-2;
     max-width: $grid-width;
-    background-color: #eee;
+    //background-color: #eee;
     margin: 0 auto;
+    padding: 0 8rem;
 
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
@@ -15,8 +16,8 @@
     @include clearfix;
 
     [class^="col-"]{
-        background-color: orangered;
-        border: 1px solid black;
+        //background-color: orangered;
+        //border: 1px solid black;
         float: left;
         &:not(:last-child){
             margin-right: $gutter-horizontal;

@@ -12,16 +12,52 @@ body{
 
     &--main{
         display: block;
-        font-size: 60px;
-        font-weight: 400;
-        letter-spacing: 35px;
+        font-size: 6rem;
+        font-style: 400;
+        letter-spacing: 3.5rem;
         animation: fadeInLeft 1s ease-out ;
     }
     &--sub{
         display: block;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 400;
-        letter-spacing: 15px;
+        letter-spacing: 1.75rem;
         animation: fadeInRight 1s linear;
+    }
+}
+
+.heading-secondary{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right,$color-light-green ,$color-dark-green);
+    display: inline-block;
+
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+        -ms-background-clip: text;
+            background-clip: text;
+
+    color: transparent;
+    transition: all .3s;
+    letter-spacing: 2px;
+
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+    }
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    &:not(:last-child){
+        margin-bottom: 3rem;
     }
 }
