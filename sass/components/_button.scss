@@ -3,6 +3,11 @@
     color: gray;
 }
 
+.btn-green {
+    background-color: $color-primary-light;
+    color: $color-white;
+}
+
 .header__textbox--button{
     &:link,
     &:visited{
