@@ -30,19 +30,9 @@
 .section-stories {
     padding: 5rem 0 15rem 0;
     position: relative;
+}
 
-    // background-color: rgba($color-grey-1,.8);
-    // & .row > * {
-    //     margin-top: 5rem;
-    // }
-    // & .bg-video {
-    //     height: 100%;
-    // }
-
-    // & video {
-    //     width: 100%;
-    //     //height: 100vh;
-    //     position: absolute;
-    //     z-index: -1;
-    // }
+.section-book {
+    padding: 15rem 1rem;
+    background-image: linear-gradient(to right bottom,$color-primary-light,$color-primary-dark);
 }

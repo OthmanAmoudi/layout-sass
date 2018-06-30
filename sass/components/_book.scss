@@ -1,0 +1,81 @@
+.book {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    height: 48rem;
+    //width: 80%;
+    margin: 0 auto;
+    background-image: url('/img/nat-10.jpg');
+    background-size: 100%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black,.6);
+
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba($color-grey-1,.9);
+        height: 100%;
+        width: 60%;
+        -webkit-clip-path: polygon(0 0, 93% 0, 75% 100%, 0% 100%);
+                clip-path: polygon(0 0, 93% 0, 75% 100%, 0% 100%);
+        & h2{
+            margin-left:6rem;
+        }
+    }
+
+    .form__group{
+        margin: 2rem 5rem;
+        color: grey;
+    }
+
+    &__textfield {
+        display: block;
+        width: 70%;
+        border: none;
+        height: 4rem;
+        border-radius: 3px;
+        background: rgba($color-grey-1,.2);
+        box-shadow: 0 1rem 4rem rgba($color-black,.4);
+        padding: 1rem;
+        font-size: 1.6rem;
+        font-family: inherit;
+        color: inherit;//rgba(black,.5);
+        text-transform: capitalize;
+
+        &::-webkit-input-placeholder {
+            color: rgba(black,.3);
+            //text-align: left;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+        }
+
+        &:focus {
+            //background-color: rgba($color-primary-light,.5);
+            border: none;
+            outline: none;
+            transition: all .4s ease;
+            height: 4.5rem;
+            &:invalid {
+                border-bottom:3px solid rgba(red,.6);
+            }
+            &:valid {
+                border-bottom:3px solid rgba($color-primary-dark,.9);
+            }
+        }
+    }
+
+    .form__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 1rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+}
+
+.book__textfield:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}

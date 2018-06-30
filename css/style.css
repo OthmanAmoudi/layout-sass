@@ -26,6 +26,30 @@ body {
 .u-margin-bottom-huge {
   margin-bottom: 10rem; }
 
+.u-margin-top-small {
+  margin-top: 1.5rem; }
+
+.u-margin-top-medium {
+  margin-top: 4rem; }
+
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
+.u-margin-small {
+  margin: 1.5rem; }
+
+.u-margin-medium {
+  margin: 4rem; }
+
+.u-margin-big {
+  margin: 8rem; }
+
+.u-margin-huge {
+  margin: 10rem; }
+
 @keyframes explode {
   0% {
     transform: scale(0.5);
@@ -318,6 +342,68 @@ body {
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid rgba(128, 128, 128, 0.1); }
 
+.book {
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 48rem;
+  margin: 0 auto;
+  background-image: url("/img/nat-10.jpg");
+  background-size: 100%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6); }
+  .book__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(247, 247, 247, 0.9);
+    height: 100%;
+    width: 60%;
+    -webkit-clip-path: polygon(0 0, 93% 0, 75% 100%, 0% 100%);
+    clip-path: polygon(0 0, 93% 0, 75% 100%, 0% 100%); }
+    .book__content h2 {
+      margin-left: 6rem; }
+  .book .form__group {
+    margin: 2rem 5rem;
+    color: grey; }
+  .book__textfield {
+    display: block;
+    width: 70%;
+    border: none;
+    height: 4rem;
+    border-radius: 3px;
+    background: rgba(247, 247, 247, 0.2);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: inherit;
+    text-transform: capitalize; }
+    .book__textfield::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.3);
+      text-transform: capitalize;
+      font-size: 1.5rem; }
+    .book__textfield:focus {
+      border: none;
+      outline: none;
+      transition: all .4s ease;
+      height: 4.5rem; }
+      .book__textfield:focus:invalid {
+        border-bottom: 3px solid rgba(255, 0, 0, 0.6); }
+      .book__textfield:focus:valid {
+        border-bottom: 3px solid rgba(40, 180, 133, 0.9); }
+  .book .form__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; }
+
+.book__textfield:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
 .story {
   width: 75%;
   margin: 0 auto;
@@ -458,3 +544,7 @@ body {
 .section-stories {
   padding: 5rem 0 15rem 0;
   position: relative; }
+
+.section-book {
+  padding: 15rem 1rem;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
