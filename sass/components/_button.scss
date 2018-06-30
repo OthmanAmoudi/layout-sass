@@ -9,6 +9,7 @@
 }
 
 .header__textbox--button{
+    &,
     &:link,
     &:visited{
         content: '';
@@ -22,6 +23,11 @@
         text-transform: uppercase;
         display: inline-block;
         animation: fadeInBottom 1s ease-out;
+
+        //Change for the HTML <BUTTON> arrribute
+        border: none;
+        cursor: pointer;
+
     }
 
     &:hover{
