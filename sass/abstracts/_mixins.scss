@@ -12,3 +12,28 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+/*
+0 - 600PX MOBILE SCREEN
+600 - 900px TABLET PORTRAIT SCREEN
+900 - 1200px TABLET LANDSCAPE SCREEN
+1200 - 1799px NORMAL SIZE DESKTOP (NO NEED TO APPLY)
+1800px*  and Above - EXTRA LARGE MONITORS SCREEN (iMac, External Large Monitors,Smart TV's)
+
+*/
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {@content};
+    }
+    @if $breakpoint == tab-pr {
+        @media (max-width:56.25em) {@content};
+    }
+    @if $breakpoint == tab-ld {
+        @media (max-width:   75em) {@content};
+    }
+    @if $breakpoint == big-desktop {
+        @media (max-width:112.5em) {@content}
+    }
+}
+
