@@ -8,7 +8,9 @@
   },
   "author": "othman",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "live-server": "^1.2.0"
+  },
   "devDependencies": {
     "node-sass": "^4.9.0"
   }
