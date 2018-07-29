@@ -23,16 +23,24 @@
 
 @mixin respond($breakpoint){
     @if $breakpoint == phone {
-        @media (max-width: 35.5em) {@content};
+        @media (max-width: 35.5em) { // <=600px
+            @content
+        };
     }
     @if $breakpoint == tab-pr {
-        @media (max-width:52.25em) {@content};
+        @media (max-width:52.25em) { // <=900px
+            @content
+        };
     }
     @if $breakpoint == tab-ld {
-        @media (max-width:   70em) {@content};
+        @media (max-width:   70em) { // <=1200px
+            @content
+        };
     }
     @if $breakpoint == big-desktop {
-        @media (min-width:112.5em) {@content}
+        @media (min-width:112.5em) { // >= 1800px
+            @content
+        }
     }
 }
 
