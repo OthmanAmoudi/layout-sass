@@ -9,16 +9,16 @@
 html {
     font-size: 52.5%; // 1 rem = 10px :: 10px/16px = 62.5% (decided to use 52.5%)
     @include respond(phone){
-        font-size: 41.5%;
+        font-size: 31.5%;
     }
     @include respond(tab-pr){
         font-size: 48.5%;
     }
     @include respond(tab-ld){
-        font-size: 58.5%;
+        font-size: 52.5%;
     }
     @include respond(big-desktop){
-        font-size: 78.5%;
+        font-size: 75%;
     }
 }
 

@@ -14,18 +14,18 @@
 
 html {
   font-size: 52.5%; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 35.5em) {
     html {
-      font-size: 41.5%; } }
-  @media (max-width: 56.25em) {
+      font-size: 31.5%; } }
+  @media (max-width: 52.25em) {
     html {
       font-size: 48.5%; } }
-  @media (max-width: 75em) {
+  @media (max-width: 70em) {
     html {
-      font-size: 58.5%; } }
+      font-size: 52.5%; } }
   @media (min-width: 112.5em) {
     html {
-      font-size: 78.5%; } }
+      font-size: 75%; } }
 
 body {
   padding: 20px; }
